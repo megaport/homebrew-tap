@@ -5,13 +5,13 @@
 class MegaportCli < Formula
   desc "CLI tool for managing Megaport network infrastructure"
   homepage "https://github.com/megaport/megaport-cli"
-  version "0.9.4"
+  version "1.12.1"
   license "MPL-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/megaport/megaport-cli/releases/download/v0.9.4/megaport-cli_0.9.4_darwin_amd64.zip"
-      sha256 "afe5d0d1fce4414da1cd9fbc6476794824ac77fbd9b57bb5edcd0ed7ca05fa4b"
+      url "https://github.com/megaport/megaport-cli/releases/download/v1.12.1/megaport-cli_1.12.1_darwin_amd64.zip"
+      sha256 "654f05c05744b2bbc9d15cb97ac60c5f697f684f0139c36c3991c173e2b2395f"
 
       def install
         if File.exist?("megaport-cli_v#{version}")
@@ -22,8 +22,8 @@ class MegaportCli < Formula
       end
     end
     on_arm do
-      url "https://github.com/megaport/megaport-cli/releases/download/v0.9.4/megaport-cli_0.9.4_darwin_arm64.zip"
-      sha256 "027a5eaf8db0cb0c4f7c5beec858ca23a973a1d927db1e16eb79e454b746735e"
+      url "https://github.com/megaport/megaport-cli/releases/download/v1.12.1/megaport-cli_1.12.1_darwin_arm64.zip"
+      sha256 "122a0595f4b9bdd3b45c1d763621ef2ff13d22bb9759463ec3b464402817ba2f"
 
       def install
         if File.exist?("megaport-cli_v#{version}")
@@ -38,8 +38,8 @@ class MegaportCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/megaport/megaport-cli/releases/download/v0.9.4/megaport-cli_0.9.4_linux_amd64.zip"
-        sha256 "cb50aa05226b9cc7cc432f5241b036aa4b6fe1cbca4ef6e65ef5c8e0c7811f4f"
+        url "https://github.com/megaport/megaport-cli/releases/download/v1.12.1/megaport-cli_1.12.1_linux_amd64.zip"
+        sha256 "4b5be139e3d06dfabf6ab64a3971a340b47d2b754eaca3873de75f2d391646f8"
 
         def install
           if File.exist?("megaport-cli_v#{version}")
@@ -52,8 +52,8 @@ class MegaportCli < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/megaport/megaport-cli/releases/download/v0.9.4/megaport-cli_0.9.4_linux_arm.zip"
-        sha256 "a8e671551009c31f0029ac2624e7a55664bb8e58cbaab36688caad7eb401ea09"
+        url "https://github.com/megaport/megaport-cli/releases/download/v1.12.1/megaport-cli_1.12.1_linux_arm.zip"
+        sha256 "9c891abd48a05c7900b4f3884875405f50e317351eafe1802350a055d9300424"
 
         def install
           if File.exist?("megaport-cli_v#{version}")
@@ -66,8 +66,8 @@ class MegaportCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/megaport/megaport-cli/releases/download/v0.9.4/megaport-cli_0.9.4_linux_arm64.zip"
-        sha256 "3163d40eb76aa35d6892fe7ca0dfe6624fd344d8456432ff65a7715dbaa1a763"
+        url "https://github.com/megaport/megaport-cli/releases/download/v1.12.1/megaport-cli_1.12.1_linux_arm64.zip"
+        sha256 "c30471bc6b5b6e06bc023d563723e436f4181922949252a57ac1cc9ec9a19d55"
 
         def install
           if File.exist?("megaport-cli_v#{version}")
