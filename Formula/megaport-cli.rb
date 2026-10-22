@@ -6,6 +6,7 @@ class MegaportCli < Formula
   desc "CLI tool for managing Megaport network infrastructure"
   homepage "https://github.com/megaport/megaport-cli"
   version "0.15.2"
+  version_scheme 1
   license "MPL-2.0"
 
   on_macos do
